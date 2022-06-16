@@ -119,3 +119,13 @@ The best way to learn Redwood is by going through the comprehensive [tutorial](h
 
 - Stay updated: read [Forum announcements](https://community.redwoodjs.com/c/announcements/5), follow us on [Twitter](https://twitter.com/redwoodjs), and subscribe to the [newsletter](https://redwoodjs.com/newsletter)
 - [Learn how to contribute](https://redwoodjs.com/docs/contributing)
+
+# Tutorial Notes
+
+This tutorial is from the offical [RedwoodJS tutorial](https://redwoodjs.com/docs/tutorial/chapter1/prerequisites)
+
+## Folder structure
+
+- `web/` contains all the frontend code
+- `api/` contains all the backend code
+- RedwoodJS uses a mono repo approach to each of the components of the stack
