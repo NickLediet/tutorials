@@ -2,11 +2,12 @@
   "name": "laracasts-testing-vue",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "vue": "^3.2.37"
@@ -14,8 +15,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",
     "@vue/test-utils": "^2.1.0",
-    "@vue/vue3-jest": "^29.1.1",
-    "jest": "^29.1.2",
-    "vite": "^3.1.0"
+    "jsdom": "^20.0.1",
+    "vite": "^3.1.0",
+    "vitest": "^0.24.1"
   }
 }
