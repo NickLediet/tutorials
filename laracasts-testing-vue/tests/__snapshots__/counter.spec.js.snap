@@ -10,14 +10,30 @@ VueWrapper {
     "_container": <div
       data-v-app=""
     >
-      <h1>
-        Current count is 
-        <span
-          class="counter"
+      <div
+        class="counter"
+      >
+        <h1
+          class="counter__text"
         >
-          0
-        </span>
-      </h1>
+           Current count is: 
+          <span
+            class="counter__count"
+          >
+            0
+          </span>
+        </h1>
+        <button
+          class="counter__add"
+        >
+          +
+        </button>
+        <button
+          class="counter__decrement"
+        >
+          -
+        </button>
+      </div>
     </div>,
     "_context": {
       "app": [Circular],
@@ -141,7 +157,9 @@ VueWrapper {
       "refs": {
         "VTU_COMPONENT": {
           "count": 0,
+          "decrement": [Function],
           "hasOwnProperty": [Function],
+          "increment": [Function],
         },
       },
       "render": [Function],
@@ -193,7 +211,9 @@ VueWrapper {
             "_isMockFunction": 0,
             "constructor": 0,
             "count": 2,
+            "decrement": 4,
             "hasOwnProperty": 4,
+            "increment": 4,
             "toJSON": 0,
             Symbol(Symbol.toStringTag): 0,
           },
@@ -239,7 +259,9 @@ VueWrapper {
           "components": {},
           "ctx": {
             "count": 0,
+            "decrement": [Function],
             "hasOwnProperty": [Function],
+            "increment": [Function],
           },
           "da": null,
           "data": {
@@ -282,11 +304,16 @@ VueWrapper {
           "provides": {},
           "proxy": {
             "count": 0,
+            "decrement": [Function],
             "hasOwnProperty": [Function],
+            "increment": [Function],
           },
           "refs": {},
           "render": [Function],
-          "renderCache": [],
+          "renderCache": [
+            [Function],
+            [Function],
+          ],
           "root": [Circular],
           "rtc": null,
           "rtg": null,
@@ -325,18 +352,90 @@ VueWrapper {
                 "__v_skip": true,
                 "anchor": null,
                 "appContext": null,
-                "children": "Current count is ",
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": " Current count is: ",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el":  Current count is: ,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": null,
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 8,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": Symbol(Text),
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "0",
+                    "component": null,
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <span
+                      class="counter__count"
+                    >
+                      0
+                    </span>,
+                    "key": null,
+                    "patchFlag": 1,
+                    "props": {
+                      "class": "counter__count",
+                    },
+                    "ref": null,
+                    "scopeId": null,
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "span",
+                  },
+                ],
                 "component": null,
                 "dirs": null,
                 "dynamicChildren": null,
                 "dynamicProps": null,
-                "el": Current count is ,
+                "el": <h1
+                  class="counter__text"
+                >
+                   Current count is: 
+                  <span
+                    class="counter__count"
+                  >
+                    0
+                  </span>
+                </h1>,
                 "key": null,
                 "patchFlag": 0,
-                "props": null,
+                "props": {
+                  "class": "counter__text",
+                },
                 "ref": null,
                 "scopeId": null,
-                "shapeFlag": 8,
+                "shapeFlag": 17,
                 "slotScopeIds": null,
                 "ssContent": null,
                 "ssFallback": null,
@@ -345,27 +444,28 @@ VueWrapper {
                 "target": null,
                 "targetAnchor": null,
                 "transition": null,
-                "type": Symbol(Text),
+                "type": "h1",
               },
               {
                 "__v_isVNode": true,
                 "__v_skip": true,
                 "anchor": null,
                 "appContext": null,
-                "children": "0",
+                "children": "+",
                 "component": null,
                 "dirs": null,
                 "dynamicChildren": null,
                 "dynamicProps": null,
-                "el": <span
-                  class="counter"
+                "el": <button
+                  class="counter__add"
                 >
-                  0
-                </span>,
+                  +
+                </button>,
                 "key": null,
-                "patchFlag": 1,
+                "patchFlag": 0,
                 "props": {
-                  "class": "counter",
+                  "class": "counter__add",
+                  "onClick": [Function],
                 },
                 "ref": null,
                 "scopeId": null,
@@ -378,7 +478,41 @@ VueWrapper {
                 "target": null,
                 "targetAnchor": null,
                 "transition": null,
-                "type": "span",
+                "type": "button",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "-",
+                "component": null,
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <button
+                  class="counter__decrement"
+                >
+                  -
+                </button>,
+                "key": null,
+                "patchFlag": 0,
+                "props": {
+                  "class": "counter__decrement",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "scopeId": null,
+                "shapeFlag": 9,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "button",
               },
             ],
             "component": null,
@@ -395,14 +529,14 @@ VueWrapper {
                 "dynamicChildren": null,
                 "dynamicProps": null,
                 "el": <span
-                  class="counter"
+                  class="counter__count"
                 >
                   0
                 </span>,
                 "key": null,
                 "patchFlag": 1,
                 "props": {
-                  "class": "counter",
+                  "class": "counter__count",
                 },
                 "ref": null,
                 "scopeId": null,
@@ -419,17 +553,35 @@ VueWrapper {
               },
             ],
             "dynamicProps": null,
-            "el": <h1>
-              Current count is 
-              <span
-                class="counter"
+            "el": <div
+              class="counter"
+            >
+              <h1
+                class="counter__text"
               >
-                0
-              </span>
-            </h1>,
+                 Current count is: 
+                <span
+                  class="counter__count"
+                >
+                  0
+                </span>
+              </h1>
+              <button
+                class="counter__add"
+              >
+                +
+              </button>
+              <button
+                class="counter__decrement"
+              >
+                -
+              </button>
+            </div>,
             "key": null,
             "patchFlag": 0,
-            "props": null,
+            "props": {
+              "class": "counter",
+            },
             "ref": null,
             "scopeId": null,
             "shapeFlag": 17,
@@ -441,7 +593,7 @@ VueWrapper {
             "target": null,
             "targetAnchor": null,
             "transition": null,
-            "type": "h1",
+            "type": "div",
           },
           "suspense": null,
           "suspenseId": 0,
@@ -449,6 +601,10 @@ VueWrapper {
             "__file": "C:/Users/nicholas.lediet/Projects/tutorials/laracasts-testing-vue/src/components/Counter.vue",
             "components": {},
             "data": [Function],
+            "methods": {
+              "decrement": [Function],
+              "increment": [Function],
+            },
             "name": "counter",
             "render": [Function],
           },
@@ -462,14 +618,30 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <h1>
-          Current count is 
-          <span
-            class="counter"
+        "el": <div
+          class="counter"
+        >
+          <h1
+            class="counter__text"
           >
-            0
-          </span>
-        </h1>,
+             Current count is: 
+            <span
+              class="counter__count"
+            >
+              0
+            </span>
+          </h1>
+          <button
+            class="counter__add"
+          >
+            +
+          </button>
+          <button
+            class="counter__decrement"
+          >
+            -
+          </button>
+        </div>,
         "key": null,
         "patchFlag": 0,
         "props": {
@@ -495,6 +667,10 @@ VueWrapper {
           "__file": "C:/Users/nicholas.lediet/Projects/tutorials/laracasts-testing-vue/src/components/Counter.vue",
           "components": {},
           "data": [Function],
+          "methods": {
+            "decrement": [Function],
+            "increment": [Function],
+          },
           "name": "counter",
           "render": [Function],
         },
@@ -549,14 +725,30 @@ VueWrapper {
         "dirs": null,
         "dynamicChildren": null,
         "dynamicProps": null,
-        "el": <h1>
-          Current count is 
-          <span
-            class="counter"
+        "el": <div
+          class="counter"
+        >
+          <h1
+            class="counter__text"
           >
-            0
-          </span>
-        </h1>,
+             Current count is: 
+            <span
+              class="counter__count"
+            >
+              0
+            </span>
+          </h1>
+          <button
+            class="counter__add"
+          >
+            +
+          </button>
+          <button
+            class="counter__decrement"
+          >
+            -
+          </button>
+        </div>,
         "key": null,
         "patchFlag": 0,
         "props": null,
@@ -601,17 +793,35 @@ VueWrapper {
   "__setProps": [Function],
   "componentVM": {
     "count": 0,
+    "decrement": [Function],
     "hasOwnProperty": [Function],
+    "increment": [Function],
   },
   "isDisabled": [Function],
   "rootVM": {},
-  "wrapperElement": <h1>
-    Current count is 
-    <span
-      class="counter"
+  "wrapperElement": <div
+    class="counter"
+  >
+    <h1
+      class="counter__text"
     >
-      0
-    </span>
-  </h1>,
+       Current count is: 
+      <span
+        class="counter__count"
+      >
+        0
+      </span>
+    </h1>
+    <button
+      class="counter__add"
+    >
+      +
+    </button>
+    <button
+      class="counter__decrement"
+    >
+      -
+    </button>
+  </div>,
 }
 `;
